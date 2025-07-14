@@ -1,0 +1,35 @@
+{
+   "name": "interceptor-builder",
+   "version": "1.0.3",
+   "description": "A modern collection of reusable utility functions for JavaScript and TypeScript, designed to simplify everyday development tasks.",
+   "main": "lib/index.js",
+   "types": "lib/index.d.ts",
+   "scripts": {
+      "build": "tsc",
+      "prepare": "npm run build"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/riteshmyhub/interceptor-builder.git"
+   },
+   "keywords": [
+      "javasript",
+      "typescript",
+      "ts"
+   ],
+   "author": "ritesh-goswami",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/riteshmyhub/interceptor-builder/issues"
+   },
+   "homepage": "https://github.com/riteshmyhub/interceptor-builder#readme",
+   "devDependencies": {
+      "typescript": "^5.4.3"
+   },
+   "files": [
+      "lib/**/*"
+   ],
+   "dependencies": {
+      "axios": "^1.10.0"
+   }
+}
