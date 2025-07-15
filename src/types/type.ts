@@ -2,10 +2,10 @@ import type { AxiosInstance, AxiosInterceptorManager, AxiosResponse, InternalAxi
 
 type Req = AxiosInterceptorManager<InternalAxiosRequestConfig<any>>;
 type Res = AxiosInterceptorManager<AxiosResponse<any, any>>;
-
+type Instance = AxiosInstance;
 interface Interceptor {
-   instance: AxiosInstance;
-   intercept(request: Req, response: Res): AxiosInstance;
+   instance: Instance;
+   intercept(request: Req, response: Res): Instance;
 }
 
-export type { Interceptor, Req, Res };
+export type { Interceptor, Req, Res, Instance };
