@@ -42,9 +42,10 @@ export default class MyInterceptor implements Interceptor {
 
 ```typescript
 import InterceptorBuilder from "interceptor-builder";
+import { createInstance } from "interceptor-builder";
 import MyInterceptor from "...";
 
-const axiosInstance = axios.create();
+const axiosInstance = createInstance();
 return new InterceptorBuilder(this.instance) //
    .use(MyInterceptor)
    .build();

@@ -1,6 +1,6 @@
 {
    "name": "interceptor-builder",
-   "version": "1.3.0",
+   "version": "1.3.3",
    "description": "A modern collection of reusable utility functions for JavaScript and TypeScript, designed to simplify everyday development tasks.",
    "main": "lib/index.js",
    "types": "lib/index.d.ts",
