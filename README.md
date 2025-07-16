@@ -42,11 +42,13 @@ export default class MyInterceptor implements Interceptor {
 
 ```typescript
 import InterceptorBuilder from "interceptor-builder";
-import { createInstance } from "interceptor-builder";
 import MyInterceptor from "...";
 
-const axiosInstance = createInstance();
-return new InterceptorBuilder(this.instance) //
+const instance = axios.create({
+   baseURL: "http://localhost:5173/",
+});
+
+return new InterceptorBuilder(instance) //
    .use(MyInterceptor)
    .build();
 ```
