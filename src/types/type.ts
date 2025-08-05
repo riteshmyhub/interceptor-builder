@@ -5,7 +5,7 @@ type Res = AxiosInterceptorManager<AxiosResponse<any, any>>;
 type Instance = AxiosInstance;
 interface Interceptor {
    instance: Instance;
-   intercept(request: Req, response: Res): Instance;
+   intercept(req: Req, res: Res): Instance;
 }
 
 export type { Interceptor, Req, Res, Instance };
