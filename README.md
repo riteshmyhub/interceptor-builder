@@ -229,7 +229,7 @@ export default class TokenInterceptor implements Interceptor {
                if (status === 401 && !originalRequest?._retry) {
                   originalRequest._retry = true;
                   const token = await this.getToken();
-                  if (!token.refreshToken) return;
+                  if (!token.accessToken) return;
                   /*---refreshTokenApi---*/
                   const data = await this.refreshTokenApi();
                   if (data?.accessToken) {
